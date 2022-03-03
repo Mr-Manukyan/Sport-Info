@@ -1,0 +1,25 @@
+.containerRight{
+    align-items:flex-end;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:fixed;
+    right:0px;
+    top:0px;
+    z-index: 10000;
+
+  }
+  .containerLeft{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index: 10000;
+
+  }
+
+

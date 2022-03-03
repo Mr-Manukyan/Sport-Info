@@ -6,7 +6,7 @@ import AnimatedPage from "../../Common/AnimatedPage/AnimatedPage";
 const Trapeze = () => {
 
   return (
-    <AnimatedPage variants={'left'}>
+    <AnimatedPage variants={'top'}>
       <div className={style.container}>
         Trapeze
       </div>

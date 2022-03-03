@@ -6,7 +6,7 @@ import AnimatedPage from "../../Common/AnimatedPage/AnimatedPage";
 const Shoulders = () => {
   
   return (
-    <AnimatedPage variants={'left'}>
+    <AnimatedPage variants={'top'}>
       <div className={style.container}>
         Shoulders
       </div>

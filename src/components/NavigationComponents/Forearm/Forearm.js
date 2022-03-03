@@ -5,7 +5,7 @@ import AnimatedPage from "../../Common/AnimatedPage/AnimatedPage";
 const Forearm = () => {
 
   return (
-    <AnimatedPage variants={'left'}>
+    <AnimatedPage variants={'top'}>
       <div className={style.container}>
         Forearm
       </div>

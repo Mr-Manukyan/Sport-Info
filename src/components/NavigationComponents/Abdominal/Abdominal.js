@@ -7,10 +7,10 @@ const Abdominal = () => {
 
   return (
     
-    <AnimatedPage variants={'left'}>
-    <div className={style.container}>
-    Abdominal
-    </div>
+    <AnimatedPage variants={'top'}>
+      <div className={style.container}>
+       Abdominals
+     </div>
    </AnimatedPage>
   
   );

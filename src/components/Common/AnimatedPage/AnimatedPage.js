@@ -7,19 +7,19 @@ import { motion } from 'framer-motion'
 
 
 
-const animationsLeft = {
+const animationsTop = {
   initial : {
       opacity : 0,
-      x: '-100%',
+      y: '-100vh',
   
   },
   animate : {
       opacity : 1,
-      x : 0
+      y: 0
   },
   exit : {
       opacity: 0,
-      x : '-100%',
+      y : '-100vh',
   
   }
 }
@@ -33,7 +33,7 @@ const AnimatedPage = ({variants,children}) => {
       initial = 'initial'
       animate = 'animate'
       exit = 'exit'
-      variants={ (variants === 'left' && animationsLeft) }
+      variants={ (variants === 'top' && animationsTop) }
       transition={{duration :0.7,delay : 0.5}}
     
     >

@@ -1,10 +1,10 @@
 .container {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(250, 0, 62);
+    background: rgb(107, 204, 207);
     color: black;
     font-size: 18px;
  }

@@ -4,7 +4,7 @@ import AnimatedPage from "../../Common/AnimatedPage/AnimatedPage";
 
 const Broadest = () => {
   return (
-    <AnimatedPage variants={"left"}>
+    <AnimatedPage variants={"top"}>
       <div className={style.container}>
         Broadest
       </div>

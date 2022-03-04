@@ -2,28 +2,33 @@ import React from "react";
 import { Route,Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import { AnimatePresence } from "framer-motion";
+import { withSuspense } from "./components/Common/Hooks/withSuspense";
 
 import HeaderContainer from "./components/HeaderContainer/HeaderContainer";
 import NavigationContainer from "./components/NavigationContainer/NavigationContainer";
-import HomeContainer from "./components/HomeContainer/HomeContainer";
-import DietsContainer from "./components/DietsContainer/DietsContainer";
-import AboutUsContainer from "./components/AboutUsContainer/AboutUsContainer";
-import ContactUsContainer from "./components/ContactUsContainer/ContactUsContainer";
 import ScrollTop from "./components/Common/ScrollTop/ScrollTop";
-import Abdominal from "./components/NavigationComponents/Abdominal/Abdominal";
-import Biceps from "./components/NavigationComponents/Biceps/Biceps";
-import Broadest from "./components/NavigationComponents/Broadest/Broadest";
-import Buttocks from "./components/NavigationComponents/Buttocks/Buttocks";
-import Chest from "./components/NavigationComponents/Chest/Chest";
-import Forearm from "./components/NavigationComponents/Forearm/Forearm";
-import Legs from "./components/NavigationComponents/Legs/Legs";
-import Shoulders from "./components/NavigationComponents/Shoulders/Shoulders";
-import Trapeze from "./components/NavigationComponents/Trapeze/Trapeze";
-import Triceps from "./components/NavigationComponents/Triceps/Triceps";
+
+const HomeContainer = withSuspense(React.lazy( () => import("./components/HomeContainer/HomeContainer")))
+const DietsContainer = withSuspense(React.lazy( () => import("./components/DietsContainer/DietsContainer")))
+const AboutUsContainer = withSuspense(React.lazy( () => import("./components/AboutUsContainer/AboutUsContainer")))
+const ContactUsContainer = withSuspense(React.lazy( () => import("./components/ContactUsContainer/ContactUsContainer")))
+
+const Abdominal = withSuspense(React.lazy( () => import("./components/NavigationComponents/Abdominal/Abdominal")))
+const Biceps = withSuspense(React.lazy( () => import("./components/NavigationComponents/Biceps/Biceps")))
+const Broadest = withSuspense(React.lazy( () => import("./components/NavigationComponents/Broadest/Broadest")))
+const Buttocks = withSuspense(React.lazy( () => import("./components/NavigationComponents/Buttocks/Buttocks")))
+const Chest = withSuspense(React.lazy( () => import("./components/NavigationComponents/Chest/Chest")))
+const Forearm = withSuspense(React.lazy( () => import("./components/NavigationComponents/Forearm/Forearm")))
+const Legs = withSuspense(React.lazy( () => import("./components/NavigationComponents/Legs/Legs")))
+const Shoulders = withSuspense(React.lazy( () => import("./components/NavigationComponents/Shoulders/Shoulders")))
+const Trapeze = withSuspense(React.lazy( () => import("./components/NavigationComponents/Trapeze/Trapeze")))
+const Triceps = withSuspense(React.lazy( () => import("./components/NavigationComponents/Triceps/Triceps")))
+
 
 
 
 const App = (props) => {
+  
   const location = useLocation()
 
   return (
@@ -34,8 +39,8 @@ const App = (props) => {
        <AnimatePresence exitBeforeEnter>
         <Routes key={location.pathname} location = {location} >
 
-          <Route exact path={'/'} element = { <HomeContainer /> } />
-          <Route exact path='/diets' element = { <DietsContainer /> } />
+          <Route exact path={'/'} element = {<HomeContainer /> } />
+          <Route exact path='/diets' element = {<DietsContainer /> } />
           <Route exact path='/aboutUs' element = { <AboutUsContainer /> } />
           <Route exact path='/contactUs' element = { <ContactUsContainer /> }/>
 

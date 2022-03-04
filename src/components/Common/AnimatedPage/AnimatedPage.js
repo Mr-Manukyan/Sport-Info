@@ -19,7 +19,7 @@ const animationsTop = {
   },
   exit : {
       opacity: 0,
-      y : '-100vh',
+      y : '100vh',
   
   }
 }
@@ -34,7 +34,7 @@ const AnimatedPage = ({variants,children}) => {
       animate = 'animate'
       exit = 'exit'
       variants={ (variants === 'top' && animationsTop) }
-      transition={{duration :0.7,delay : 0.5}}
+      transition={{duration :0.6}}
     
     >
       {children}

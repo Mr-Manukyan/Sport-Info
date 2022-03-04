@@ -88,6 +88,7 @@ export const BigScreenInfoAnimations = {
           delay: custom * 0.2,
           duration: custom * 0.2,
         },
+        
       }),
     },
     animationPhotoRight: {

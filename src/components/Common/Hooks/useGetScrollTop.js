@@ -20,7 +20,7 @@ const useScrollTop = () => {
         const handle = () => setScrollTop(getWindowScrollTop)
         window.addEventListener('scroll',handle)
         return () => window.removeEventListener('scroll',handle)
-    },[location])
+    },[getWindowScrollTop,location])
 
 
       return scrollTop

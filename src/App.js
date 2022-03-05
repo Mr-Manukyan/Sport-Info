@@ -7,6 +7,7 @@ import { withSuspense } from "./components/Common/Hooks/withSuspense";
 import HeaderContainer from "./components/HeaderContainer/HeaderContainer";
 import NavigationContainer from "./components/NavigationContainer/NavigationContainer";
 import ScrollTop from "./components/Common/ScrollTop/ScrollTop";
+import Loading from "./components/Common/Loading/Loading";
 
 const HomeContainer = withSuspense(React.lazy( () => import("./components/HomeContainer/HomeContainer")))
 const DietsContainer = withSuspense(React.lazy( () => import("./components/DietsContainer/DietsContainer")))
@@ -33,7 +34,7 @@ const App = (props) => {
 
   return (
     <div className="App">
-       
+   
        <HeaderContainer />
        <NavigationContainer />
        <AnimatePresence exitBeforeEnter>
@@ -59,6 +60,7 @@ const App = (props) => {
         </Routes>
        </AnimatePresence>
        <ScrollTop />
+       <Loading zIndex />
     </div>
   );
 };

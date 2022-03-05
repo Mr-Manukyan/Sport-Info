@@ -3,10 +3,6 @@ import style from './AnimatedPage.module.css'
 import { motion } from 'framer-motion'
 
 
-
-
-
-
 const animationsTop = {
   initial : {
       opacity : 0,
@@ -19,10 +15,11 @@ const animationsTop = {
   },
   exit : {
       opacity: 0,
-      y : '100vh',
+      y : '-100vh',
   
   }
 }
+
 
 
 const AnimatedPage = ({variants,children}) => {

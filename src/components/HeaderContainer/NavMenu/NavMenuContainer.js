@@ -3,7 +3,26 @@ import style from './NavMenuContainer.module.css'
 import MenuItem from './MenuItem/MenuItem'
 import Burger from '../../Common/Burger/Burger';
 import { LanguageContext } from '../../Common/LanguageProvider/LanguageProvider';
+import { motion } from 'framer-motion';
 
+
+const AnimationsMenu = {
+  hidden: {
+    x : '-100%',
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    x : 0,
+    transition: {
+      delay: custom * 0.3,
+      duration: custom * 0.3,
+      type: "spring",
+      stiffness: 1000,
+      damping: 50
+    },
+  }),
+};
 
 const NavMenuContainer = React.memo((props) => {
     const [width, setWidth] = useState()
@@ -19,7 +38,13 @@ const NavMenuContainer = React.memo((props) => {
    
 
     return (
-      <div className = {style.container}>
+      <motion.div className = {style.container}
+                   initial="hidden"
+                   whileInView="visible"
+                   custom={window.innerWidth <= 768 ? 13 : 11}
+                   variants={AnimationsMenu}
+                   viewport={{once: true }}
+      >
         <ul className={props.sidebar ? `${style.navMenu} ${style.active}` : style.navMenu}>
             {menuItemsName.map((item, index) => {
                 return <MenuItem key={index} path={item.path} cName={item.cName}
@@ -32,7 +57,7 @@ const NavMenuContainer = React.memo((props) => {
         <div className = {style.burgerContainer}>
           <Burger sidebar = {props.sidebar} changeSideBar={props.changeSideBar}/>
         </div>
-     </div>
+     </motion.div>
     )
 })
 

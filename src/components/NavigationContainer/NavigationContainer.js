@@ -40,6 +40,7 @@ const NavigationContainer = (props) => {
                 img={item.img}
                 key={item.id}
                 path = {item.path}
+                number = {index + 1}
               />
             );
           })}
@@ -58,6 +59,7 @@ const NavigationContainer = (props) => {
                 img={item.img}
                 key={item.id}
                 path = {item.path}
+                number = {index + 1}
               />
             );
           })}

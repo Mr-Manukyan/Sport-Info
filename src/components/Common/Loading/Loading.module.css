@@ -5,26 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* .triangleWrapper{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-    animation: rotate 2s infinite alternate;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-@keyframes rotate {
-    0%{
-       transform: rotateY(0deg);
-    }
- 
-    100%{
-        transform: rotateY(360deg);
-    }
-} */
 
 
 .spinner {

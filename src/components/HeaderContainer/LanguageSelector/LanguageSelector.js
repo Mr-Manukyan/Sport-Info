@@ -1,10 +1,32 @@
 import React, { useContext, useState } from "react";
 import style from "./LanguageSelector.module.css";
+import { motion } from "framer-motion";
 
 import { languageOptions } from "../../Common/Languages/index";
 import { LanguageContext } from "../../Common/LanguageProvider/LanguageProvider";
 
+
+
+const animationsLang = {
+  hidden: {
+    scale: 0.3,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    scale: 1,
+    opacity: 1,
+    transition: {
+      delay: custom * 0.3,
+      duration:0.7,
+      // type: "spring",
+      // stiffness: 100,
+      // damping: 70
+    },
+  }),
+};
+
 const LanguageSelector = React.memo((props) => {
+
   const { languageChange, languageFlag } = useContext(LanguageContext);
   const [show, setShow] = useState(false);
 
@@ -16,7 +38,13 @@ const LanguageSelector = React.memo((props) => {
 
   return (
 
-    <div className={style.languageContainer}> 
+    <motion.div className={style.languageContainer}
+                initial="hidden"
+                whileInView="visible"
+                custom={window.innerWidth <= 768 ? 15 : 13}
+                variants={animationsLang}
+                viewport={{once: true }}
+    > 
       <div className={style.container} onClick={() => setShow((show) => !show)}>
         <span className={show ? style.arrow : style.noArrow}></span>
         <img src={languageFlag} className={style.defaultLanguageImg} alt={"flag"} />
@@ -30,7 +58,7 @@ const LanguageSelector = React.memo((props) => {
             </div>
          ))}
      </div>
-    </div>
+    </motion.div>
   );
 })
 

@@ -6,13 +6,13 @@ import FullScreenVideo from "./FullScreenVideo/FullScreenVideo";
 
 
 const HomeContainer = () => {
-  return (
 
+    return (
       <div className={style.container}>
         <FullScreenVideo />
         <ContentContainer />
       </div>
-  );
+    )
+  
 };
-
 export default HomeContainer;

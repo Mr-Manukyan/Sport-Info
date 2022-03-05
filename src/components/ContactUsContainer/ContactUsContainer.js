@@ -1,15 +1,16 @@
 import React from 'react';
 import style from './ContactUsContainer.module.css'
 
-const ContactUsContainer = () => {
-  
-  return (
-  
-      <div className = {style.container}>
-        ContactUsContainer
-      </div>
 
-  )
+const ContactUsContainer = () => {
+
+    return (
+  
+        <div className = {style.container}>
+          ContactUsContainer
+        </div>
+
+    );
 };
 
 export default ContactUsContainer

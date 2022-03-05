@@ -1,17 +1,12 @@
-import React from 'react'
-import Logo from '../HeaderContainer/Logo/Logo';
+import React from "react";
+import style from "./DietsContainer.module.css";
 
-import style from './DietsContainer.module.css'
 
 const DietsContainer = () => {
-  
-  return (
-   
-      <div className = {style.container}>
-        <Logo />
-      </div>
 
-  )
+    return (
+      <div className={style.container}>DietsContainer</div>
+    );
 };
 
-export default DietsContainer
+export default DietsContainer;

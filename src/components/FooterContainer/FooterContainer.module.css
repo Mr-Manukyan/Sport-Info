@@ -2,20 +2,25 @@
 	width: 100%;
     height: 26vh;
     box-shadow: 0 0 15px #ffbb1c;
-    background: black;
-    background-size: 100%;
-    background-repeat: no-repeat;
-	display: flex;
-    flex-direction: column;
-	justify-content:space-around;	
-    align-items: center;
+    background: url('../Asset/photos/headerBackground.jpg');
+
     z-index: 10000000;
+}
+
+.footerWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+	justify-content:center;	
+    align-items: center;
 }
 
 .socialWebIconWrapper {
    width: 30%;
    margin-top: 30px;
    margin-bottom: 30px;
+
 }
 .infoWrapper {
     width: 100%;
@@ -23,6 +28,8 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+
+
 }
 
 .copyrightIconWrapper {
@@ -32,6 +39,7 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 5px;
+
 }
 .copyrightIconWrapper svg {
    width: 10px;

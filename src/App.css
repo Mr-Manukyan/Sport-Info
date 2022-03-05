@@ -3,8 +3,5 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  background: url('./components/Asset/photos/sportInfo.gif') center/300px no-repeat, 
-              url('./components/Asset/photos/background.jpg');
-              
 
 }

@@ -62,9 +62,9 @@ const FullScreenVideo = () => {
                 
     >
           
-        <motion.div variants={animationLogoBody} custom={4} className={style.logoBody}>
-          <motion.img variants={animationLogo} custom={5} src={logo} className={style.logo} alt="logo" />
-          <motion.div variants={animationText} custom={5} className={style.text}>{homeTitle}</motion.div>
+        <motion.div variants={animationLogoBody} custom={6} className={style.logoBody}>
+          <motion.img variants={animationLogo} custom={7} src={logo} className={style.logo} alt="logo" />
+          <motion.div variants={animationText} custom={7} className={style.text}>{homeTitle}</motion.div>
         </motion.div>
     
       <video autoPlay muted loop preload="auto" className={style.video}>

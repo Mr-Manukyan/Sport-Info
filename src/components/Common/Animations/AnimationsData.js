@@ -10,6 +10,9 @@ export const SmallScreenInfoAnimations = {
       transition: {
         delay: custom * 0.2,
         duration: custom * 0.2,
+        type: "spring",
+        stiffness: 100,
+        // damping: 10
       },
     }),
   },
@@ -25,6 +28,9 @@ export const SmallScreenInfoAnimations = {
       transition: {
         delay: custom * 0.2,
         duration: custom * 0.2,
+        type: "spring",
+        stiffness: 100,
+        // damping: 10
       },
     }),
   },
@@ -40,6 +46,9 @@ export const SmallScreenInfoAnimations = {
       transition: {
         delay: custom * 0.2,
         duration: custom * 0.2,
+        type: "spring",
+        stiffness: 100,
+        // damping: 10
       },
     }),
   },
@@ -55,6 +64,9 @@ export const SmallScreenInfoAnimations = {
       transition: {
         delay: custom * 0.2,
         duration: custom * 0.2,
+        type: "spring",
+        stiffness: 100,
+        // damping: 10
       },
     }),
   },
@@ -70,6 +82,9 @@ export const SmallScreenInfoAnimations = {
       transition: {
         delay: custom * 0.2,
         duration: custom * 0.2,
+        type: "spring",
+        stiffness: 500,
+        damping: 10
       },
     }),
   },
@@ -78,61 +93,73 @@ export const SmallScreenInfoAnimations = {
 export const BigScreenInfoAnimations = {
     animationPhotoLeft: {
       hidden: {
-        x: -100,
+        y: -100,
         opacity: 0,
       },
       visible: (custom) => ({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
-          delay: custom * 0.2,
-          duration: custom * 0.2,
+          delay : custom * 0.2,
+          duration:custom * 0.3,
+          type: "spring",
+          stiffness: 100,
+          // damping: 10
         },
         
       }),
     },
     animationPhotoRight: {
       hidden: {
-        x: 100,
+        y: 100,
         opacity: 0,
       },
   
       visible: (custom) => ({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
-          delay: custom * 0.2,
-          duration: custom * 0.2,
+          delay : custom * 0.3,
+          duration: custom * 0.3,
+          type: "spring",
+          stiffness: 100,
+          // damping: 10
         },
       }),
     },
   
     animationTextRight: {
       hidden: {
-        x: 100,
+        y: 100,
         opacity: 0,
       },
       visible: (custom) => ({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
-          delay: custom * 0.2,
-          duration: custom * 0.2,
+          delay : custom * 0.3,
+          duration: custom * 0.3,
+          type: "spring",
+          stiffness: 100,
+          // damping: 10
         },
       }),
     },
   
     animationTextLeft: {
       hidden: {
-        x: -100,
+        y: -100,
         opacity: 0,
       },
       visible: (custom) => ({
-        x: 0,
+        y: 0,
         opacity: 1,
         transition: {
-          delay: custom * 0.2,
-          duration: custom * 0.2,
+          delay : custom * 0.3,
+          duration:custom * 0.3,
+          type: "spring",
+          stiffness: 100,
+          // damping: 10
         },
       }),
     },
@@ -146,8 +173,10 @@ export const BigScreenInfoAnimations = {
         y: 0,
         opacity: 1,
         transition: {
-          delay: custom * 0.2,
-          duration: custom * 0.2,
+          duration: custom * 0.3,
+          type: "spring",
+          stiffness: 500,
+          damping: 10
         },
       }),
     },

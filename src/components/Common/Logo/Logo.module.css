@@ -21,8 +21,8 @@
 
 
 .flex1{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -31,26 +31,25 @@
     cursor: pointer;
 
     position: absolute;
-    transform: rotateY(-120deg) translateZ(28px);
+    transform: rotateY(-120deg) translateZ(17px);
 
 }
 .flex2{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     display:flex;
     justify-content: center;
     align-items: center;
     background-image: url('../../Asset/icons/logo.png');
     background-size: 100% 100%;
     cursor: pointer;
-
     position: absolute;
-    transform: rotateY(120deg) translateZ(28px);
+    transform: rotateY(120deg) translateZ(17px);
 
 }
 .flex3{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -59,26 +58,9 @@
     cursor: pointer;
 
     position: absolute;
-    transform: rotateY(0deg) translateZ(28px);
+    transform: rotateY(0deg) translateZ(17px);
 
 }
-.flex4{
-    width: 100px;
-    height: 100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../../Asset/icons/logo.png');
-    background-size: 100% 100%;
-    cursor: pointer;
-    position: absolute;
-    transform: rotateY(0deg) translateZ(50px);
-    border: 1px solid white;
-}
-
-
-
-
 
 .logoPhotoSize {
     max-width: 65px;

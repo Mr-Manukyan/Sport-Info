@@ -39,6 +39,7 @@ const FooterContainer = React.memo ( () => {
                     whileInView="visible"
                     viewport={{amount : 0.6}}
         >
+        <div className = {style.footerWrapper}>
             <div className = {style.socialWebIconWrapper}>
               <SocialWebIcon />
             </div>
@@ -68,6 +69,7 @@ const FooterContainer = React.memo ( () => {
                   {`COPYRIGHT 2021 SPORT STYLE. ALL RIGHTS RESERVED.`}
               </span>
             </div>
+          </div>
         </motion.div>
     )
 })

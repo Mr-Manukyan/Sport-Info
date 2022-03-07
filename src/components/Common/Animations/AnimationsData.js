@@ -100,7 +100,7 @@ export const BigScreenInfoAnimations = {
         y: 0,
         opacity: 1,
         transition: {
-          delay : custom * 0.2,
+          delay : custom * 0.3,
           duration:custom * 0.3,
           type: "spring",
           stiffness: 100,

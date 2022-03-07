@@ -4,7 +4,7 @@
    top: 0;
    transform: translateX(0px);
    transition: transform 0.6s ease;
-   z-index: 999999999999999;
+   z-index: 9999;
 }
 
 .hideMenuLeft{
@@ -13,7 +13,7 @@
   top: 0;
   transform: translateX(-210px);
   transition: transform 0.6s ease;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .menuWrapperRight {
@@ -22,7 +22,7 @@
     top: 0;
     transform: translateX(0px);
     transition: transform 0.6s ease;
-    z-index: 999999999999999;
+    z-index: 9999;
 }
 
 .hideMenuRight{
@@ -31,5 +31,5 @@
     top: 0;
     transform: translateX(210px);
     transition: transform 0.6s ease;
-    z-index: 999;
+    z-index: 9999;
   }

@@ -2,7 +2,7 @@
     position: absolute;
     right: 70px;
     top: 23px;
-    z-index: 9;
+    z-index: 9999999;
 }
  
 
@@ -97,10 +97,12 @@
 .languageContainer { 
     right: 90px;
     top: 29px;
+
 }
 .container {
   width: 36px;
   height: 36px;
+
 
 }
 .defaultLanguageImg {
@@ -147,6 +149,5 @@
       right: 60px;
       top: 29px;
   }
-  
-  
-  } 
+
+} 

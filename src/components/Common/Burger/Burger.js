@@ -1,10 +1,35 @@
 import React from "react"
 import style from "./Burger.module.css"
+import { motion } from "framer-motion";
+
+const AnimationsBurger = {
+  hidden: {
+    x : '-100%',
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    x : 0,
+    transition: {
+      delay: custom * 0.3,
+      duration: custom * 0.3,
+      type: "spring",
+      stiffness: 1000,
+      damping: 50
+    },
+  }),
+};
 
 const Burger = (props) => {
 
   return (
-    
+    <motion.div className = {style.burgerContainer}
+         initial="hidden"
+         whileInView="visible"
+         custom={13}
+         variants={AnimationsBurger}
+         viewport={{once: true }}
+    >
       <div className={props.sidebar ? style.active : style.burger} 
            onClick = {props.changeSideBar}>
         <svg
@@ -51,6 +76,7 @@ const Burger = (props) => {
           </g>
         </svg>
       </div>
+    </motion.div> 
   )
 }
 

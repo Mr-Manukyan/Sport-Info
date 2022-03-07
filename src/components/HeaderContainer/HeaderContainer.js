@@ -5,6 +5,7 @@ import HeaderLogo from "./HeaderLogo/HeaderLogo"
 import LanguageSelector from "./LanguageSelector/LanguageSelector"
 import NavMenuContainer from "./NavMenu/NavMenuContainer"
 import AnimationLogo from "../Common/AnimationLogo/AnimationLogo"
+import Burger from "../Common/Burger/Burger"
 
 
 const animationsHeader = {
@@ -43,6 +44,8 @@ const HeaderContainer = (props) => {
       <HeaderLogo />
       <NavMenuContainer sidebar={sidebar} changeSideBar={changeSideBar}/>
       <LanguageSelector />
+      <Burger sidebar = {sidebar} changeSideBar={changeSideBar}/>
+    
     </motion.div>
   );
 };

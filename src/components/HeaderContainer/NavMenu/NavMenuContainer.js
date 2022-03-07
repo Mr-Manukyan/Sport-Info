@@ -1,7 +1,6 @@
 import React,{useContext, useState} from 'react';
 import style from './NavMenuContainer.module.css'
 import MenuItem from './MenuItem/MenuItem'
-import Burger from '../../Common/Burger/Burger';
 import { LanguageContext } from '../../Common/LanguageProvider/LanguageProvider';
 import { motion } from 'framer-motion';
 
@@ -41,7 +40,7 @@ const NavMenuContainer = React.memo((props) => {
       <motion.div className = {style.container}
                    initial="hidden"
                    whileInView="visible"
-                   custom={window.innerWidth <= 768 ? 13 : 11}
+                   custom={11}
                    variants={AnimationsMenu}
                    viewport={{once: true }}
       >
@@ -54,9 +53,6 @@ const NavMenuContainer = React.memo((props) => {
             })}
            <div className = {style.indicator}  style = {{width,left}}></div>
         </ul>
-        <div className = {style.burgerContainer}>
-          <Burger sidebar = {props.sidebar} changeSideBar={props.changeSideBar}/>
-        </div>
      </motion.div>
     )
 })

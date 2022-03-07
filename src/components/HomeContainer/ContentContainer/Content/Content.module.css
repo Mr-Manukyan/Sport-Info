@@ -21,8 +21,9 @@
 
 
 .photoWrapper{
-    width: 500px;
 	/* transition: all .7s ease; */
+	width:45%;
+	height: 300px;
 	margin: 10px;
 	display: flex;
 	justify-content: center;
@@ -31,8 +32,8 @@
 }
 
 .photo{
-  max-width: 100%;
-  min-height: 100%;
+  width:100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.486);
@@ -40,7 +41,8 @@
 }
 
 .infoText {
-	width: 500px;
+	width: 45%;
+	min-height: 300px;
     color: white;
 	display: flex;
 	flex-wrap: wrap;
@@ -52,8 +54,9 @@
     line-height: 150%;
 	border: 1px solid rgba(255, 255, 255, 0.493);
 	border-radius: 10px;
-	padding: 10px;
+	padding: 10px 30px;
 	text-align:justify;
+	line-height: 180%;
 }
 
 .paragraphWrapper {
@@ -75,164 +78,67 @@
 
 
 
-
-  @media screen and (max-width:1065px) {
-
-	.photoWrapper{
-		max-width: 400px;
-	}
-
-	.infoText {
-		max-width: 400px;
-		font-size: 12px;
-		line-height: 150%;
-	}
-
-  }
-
-  @media screen and (max-width:950px) {
+  @media screen and (max-width:1080px) {
 
 	.infoWrapper{
 		flex-wrap: wrap;
 	}
 	.photoWrapper{
-		max-width: 600px;
-	
+		min-width: 700px;
 	}
 
 	.infoText {
-		max-width: 600px;
-		font-size: 13px;
-		line-height: 150%;
+		width: 700px;
+		font-size: 14px;
+		line-height: 200%;
 	}
 
   }
 
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:850px) {
 
 	.photoWrapper{
-		max-width: 500px;
+		min-width:99%;
 	}
 
 	.infoText {
-		max-width: 500px;
-		font-size: 11px;
-		line-height: 150%;
+		min-width:45%;
+		font-size: 13px;
+		line-height: 180%;
 	}
 
   }
   @media screen and (max-width:600px) {
 
 	.photoWrapper{
-		max-width: 400px;
+		min-width:99%;
+		position: relative;
+		padding: 0px 0px 58% 0px;
+		height: auto;
+	}
+	.photo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
 	}
 
 	.infoText {
-		max-width: 400px;
-		font-size: 10px;
-		line-height: 150%;
+		min-width:40%;
+		font-size: 13px;
+		line-height: 180%;
 	}
 
   }
 
-  @media screen and (max-width:500px) {
-
-	.photoWrapper{
-		max-width: 350px;
-	}
+  @media screen and (max-width:420px) {
 
 	.infoText {
-		max-width: 350px;
-		font-size: 10px;
-		line-height: 150%;
-	}
-
-  }
-
-  @media screen and (max-width:430px) {
-
-	.photoWrapper{
-		max-width: 340px;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-	}
-	.infoText {
-		max-width: 340px;
-		font-size: 12px;
-		line-height: 150%;
-	}
-	.paragraphWrapper {
-		height: 50px;
-	}
-
-	@media screen and (max-width:390px) {
-
-		.photoWrapper{
-			max-width: 320px;
-			display: flex;
-			align-items: center;
-		}
-	
-		.infoText {
-			max-width: 290px;
-			font-size: 11px;
-			line-height: 150%;
-		}
-	
-	  }
-
-  }
-  @media screen and (max-width:375px) {
-
-	.photoWrapper{
-		align-items:center;
-	}
-
-	.paragraph {
-		font-weight: 600;
-		letter-spacing: 3px;
-		font-size: 12px;
-	}
-
-  }
-
-  @media screen and (max-width:360px) {
-
-	.photoWrapper{
-		max-width: 300px;
-		display: flex;
-		align-items: center;
-	}
-
-	.infoText {
-		max-width: 300px;
+		min-width:40%;
 		font-size: 11px;
-		line-height: 150%;
+		line-height: 180%;
 	}
 
   }
 
-  @media screen and (max-width:320px) {
-
-	.photoWrapper{
-		max-width: 220px;
-
-	}
-
-	.infoText {
-		max-width: 220px;
-		font-size: 10px;
-		line-height: 150%;
-	}
-	.paragraphWrapper {
-		height: 50px;
-	}
-	.paragraph {
-		font-weight: 600;
-		letter-spacing: 3px;
-		font-size: 12px;
-	}
-
-  }
-
+  

@@ -1,7 +1,12 @@
+ 
+.burgerContainer{
+  display: none;
+}
+
  .burger {
     cursor: pointer;
     display: flex;
-    z-index: 100000000;
+    z-index: 9999999;
   }
 
 
@@ -58,5 +63,18 @@
     width: 80px;
     height: 80px;
 }
+
+
+@media screen and (max-width:768px){
+
+  .burgerContainer {
+    display: block;
+    z-index: 999999999;
+    position: absolute;
+    right:0px;
+    top: 5px;
+  }
+
+} 
 
   

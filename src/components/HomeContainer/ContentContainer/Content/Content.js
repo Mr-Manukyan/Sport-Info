@@ -1,16 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import style from "./Content.module.css";
-import useWindowSize from "../../../Common/Hooks/useGetWindowScreen";
 import { BigScreenInfoAnimations,SmallScreenInfoAnimations } from "../../../Common/Animations/AnimationsData";
 
 
 const Content = ({ text, alt, url, index }) => {
-  const windowSize = useWindowSize();
-  const width = windowSize.width;
-  
 
-  if (width > 950) {
+  const width = window.innerWidth;
+   console.log(width)  
+
+  if (width >= 1080) {
     return (
       <motion.div
         initial="hidden"
@@ -59,7 +58,7 @@ const Content = ({ text, alt, url, index }) => {
       </motion.div>
     );
   }
-  if (width <= 950) {
+  if (width <= 1080) {
     return (
       <motion.div 
         initial="hidden"

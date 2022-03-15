@@ -1,5 +1,5 @@
 import React from 'react'
-// import {useParams,useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import style from  './CardInfo.module.css'
 import { data } from '../Data'
 

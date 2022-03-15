@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import style from "./NavigationContainer.module.css";
 import SideNavigation from "./SideNavigation/SideNavigation";
 import NavItem from "./NavItem/NavItem";
@@ -8,7 +9,10 @@ import { LanguageContext } from "../Common/LanguageProvider/LanguageProvider";
 const NavigationContainer = (props) => {
   const { dictionary } = useContext(LanguageContext);
   const [hideMenu, setHideMenu] = useState(false);
-
+  const location = useLocation()
+  const pathname = location.pathname
+  const path = pathname.slice(0,14)
+  console.log(path)
   useEffect(() => {
     document.addEventListener("scroll", onShowMenu);
     return () => {
@@ -24,6 +28,10 @@ const NavigationContainer = (props) => {
 
   const leftMenuItemsName = dictionary.navMenuItemsName.left;
   const rightMenuItemsName = dictionary.navMenuItemsName.right;
+
+  if(location.pathname === '/gallery' || path === '/gallery-info/'){
+    return null
+  }
 
   return (
     <>

@@ -11,8 +11,9 @@ import Loading from "./components/Common/Loading/Loading";
 
 const HomeContainer = withSuspense(React.lazy( () => import("./components/HomeContainer/HomeContainer")))
 const DietsContainer = withSuspense(React.lazy( () => import("./components/DietsContainer/DietsContainer")))
-const AboutUsContainer = withSuspense(React.lazy( () => import("./components/AboutUsContainer/AboutUsContainer")))
+const GalleryContainer = withSuspense(React.lazy( () => import("./components/GalleryContainer/GalleryContainer")))
 const ContactUsContainer = withSuspense(React.lazy( () => import("./components/ContactUsContainer/ContactUsContainer")))
+const CardInfo = withSuspense(React.lazy( () => import("./components/GalleryContainer/CardInfo/CardInfo.js")))
 
 const Abdominal = withSuspense(React.lazy( () => import("./components/NavigationComponents/Abdominal/Abdominal")))
 const Biceps = withSuspense(React.lazy( () => import("./components/NavigationComponents/Biceps/Biceps")))
@@ -42,9 +43,10 @@ const App = (props) => {
 
           <Route exact path={'/'} element = {<HomeContainer /> } />
           <Route exact path='/diets' element = {<DietsContainer /> } />
-          <Route exact path='/aboutUs' element = { <AboutUsContainer /> } />
+          <Route exact path='/gallery' element = { <GalleryContainer /> } />
+          <Route exact path='/gallery-info/:id' element = { <CardInfo /> } />
           <Route exact path='/contactUs' element = { <ContactUsContainer /> }/>
-
+           
           <Route exact path='/abdominal' element = { <Abdominal /> }/>
           <Route exact path='/biceps' element = { <Biceps /> }/>
           <Route exact path='/broadest' element = { <Broadest /> }/>
@@ -55,7 +57,7 @@ const App = (props) => {
           <Route exact path='/shoulders' element = { <Shoulders /> }/>
           <Route exact path='/trapeze' element = { <Trapeze /> }/>
           <Route exact path='/triceps' element = { <Triceps /> }/>
-
+          
           <Route path='*' element={<h2>Not Found 404</h2>} />
         </Routes>
        </AnimatePresence>

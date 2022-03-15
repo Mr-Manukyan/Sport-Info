@@ -11,8 +11,8 @@
             "cName" : "navLinks"
         },
         {
-            "title" : "О нас",
-            "path" : "/aboutUs",
+            "title" : "Галерия",
+            "path" : "/gallery",
             "cName" : "navLinks"
         },
         {
@@ -100,7 +100,8 @@
     "mailAddress" : "arm.karen.manukyan88@gamil.com",
     "phone" : "Тел.",
     "phoneNumber" : "+374-41-099-022",
-    "aboutUs" : "О нас"
-}
+    "contact" : "Контакт"
+  },
+  "galleryParagraph" : "Все победители Мистер Олимпия с 1965 года"
     
 }

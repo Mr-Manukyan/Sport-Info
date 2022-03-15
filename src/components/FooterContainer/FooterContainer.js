@@ -30,7 +30,7 @@ const animationAuthorInfo = {
 
 const FooterContainer = React.memo ( () => {
     const { dictionary } = useContext(LanguageContext);
-    const {aboutUs,author,mail,mailAddress,name,phone,phoneNumber} = dictionary.authorInfo;
+    const {contact,author,mail,mailAddress,name,phone,phoneNumber} = dictionary.authorInfo;
 
 
     return (
@@ -47,7 +47,7 @@ const FooterContainer = React.memo ( () => {
             <div className = {style.infoWrapper}>
 
                 <motion.div variants={animationAuthorInfo} custom = {8} className = {style.aboutUsWrapper}>
-                   <NavLink to = '/aboutUs' className = {style.aboutUs}>{aboutUs}</NavLink>
+                   <NavLink to = '/contactUs' className = {style.aboutUs}>{contact}</NavLink>
                 </motion.div>
 
                 <div className = {style.authorWrapper}>

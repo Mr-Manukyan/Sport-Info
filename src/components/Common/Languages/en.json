@@ -13,8 +13,8 @@
             "cName" : "navLinks"
         },
         {
-            "title" : "About Us",
-            "path" : "/aboutUs",
+            "title" : "Gallery",
+            "path" : "/gallery",
             "cName" : "navLinks"
         },
         {
@@ -101,7 +101,9 @@
         "mailAddress" : "arm.karen.manukyan88@gamil.com",
         "phone" : "Phone`",
         "phoneNumber" : "+374-41-099-022",
-        "aboutUs" : "About Us"
-    }
+        "contact" : "Contact Us"
+    },
+
+    "galleryParagraph" : "All Mr. Olympia Winners Since 1965"
     
 }

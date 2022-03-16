@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate } from 'react-router-dom'
 import style from  './CardInfo.module.css'
-import { data } from '../Data'
+
 
 const CardInfo = (props) => {
 
@@ -9,7 +9,7 @@ const CardInfo = (props) => {
   const navigate = useNavigate()
   // const singleCard = data.find( (card) => card.id === parseInt(id) )
 
-  // console.log('singleCard',singleCard)
+
 
   return (
 

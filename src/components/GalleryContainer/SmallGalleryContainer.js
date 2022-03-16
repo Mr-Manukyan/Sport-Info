@@ -6,6 +6,8 @@ import Card from "./Card/Card";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { LanguageContext } from "../Common/LanguageProvider/LanguageProvider";
+import smallBG from  '../Asset/photos/galleryPhotos/smallBG.jpg'
+import bigBG from '../Asset/photos/galleryPhotos/dumbbells.jpg'
 
 const animationsButton = {
   initial: {
@@ -48,15 +50,17 @@ const SmallGalleryContainer = () => {
   const [offset, setOffset] = useState(0);
   const { dictionary } = useContext(LanguageContext);
   const galleryParagraph = dictionary.galleryParagraph;
-  const PAGE_WIDTH = window.innerWidth >= 540? 510 : 300;
+  const PAGE_WIDTH = window.innerWidth >= 540 ? 510 : 300;
 
   const handleLeftArrowClick = () => {
+
     setOffset((currentOffset) => {
       const newOffset = currentOffset + PAGE_WIDTH;
       return Math.min(newOffset, 0);
     });
   };
   const handleRightArrowClick = () => {
+
     setOffset((currentOffset) => {
       const newOffset = currentOffset - PAGE_WIDTH;
       const maxOffset = -(PAGE_WIDTH * (data.length - 1));
@@ -65,8 +69,19 @@ const SmallGalleryContainer = () => {
   };
 
   return (
-    <div className={style.container}>
-      <div className={style.wrapper}>
+    <div className={style.container} style = {{
+                                               background:`url(${window.innerWidth <= 420 ? smallBG : bigBG })`,
+                                               backgroundRepeat:'no-repeat',
+                                               backgroundSize:'cover',
+                                               backgroundPosition : 'center'
+                                              
+                                              }}>
+      <motion.div className={style.wrapper} 
+           initial="initial"
+           animate="animate"
+           variants={animationsCard}
+           transition={{ duration: 0.4}}
+      >
         <motion.p
           className={style.headerParagraph}
           initial="initial"
@@ -78,13 +93,8 @@ const SmallGalleryContainer = () => {
         </motion.p>
  
         <div className={style.window}>
-          <motion.div 
-             initial="initial"
-             animate="animate"
-             variants={animationsCard}
-             transition={{ duration: 0.4}}
-             className={style.allItemsContainer}
-             style={{ transform: `translateX(${offset}px)` }}
+          <div  className={style.allItemsContainer}
+                style={{ transform: `translateX(${offset}px)` }}
           >
             {data.map((card, index) => (
               <Card
@@ -95,10 +105,10 @@ const SmallGalleryContainer = () => {
                 small={true}
               />
             ))}
-          </motion.div>
+          </div>
         </div>
     
-      </div>
+      </motion.div>
   
       <div className={style.buttonWrapper}>
         <motion.button

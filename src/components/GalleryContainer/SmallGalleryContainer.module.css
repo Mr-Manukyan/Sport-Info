@@ -9,19 +9,18 @@
 }
 .buttonWrapper {
   width: 60%;
-  margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items:flex-start;
+  /* height: 70px; */
 }
 
 
 .wrapper {
   width:510px;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  margin-top: 15%;
+  height: 65vh;
+  /* display: flex; */
+  /* align-items: center; */
   position: relative;
 
 }
@@ -33,7 +32,7 @@
 }
 
 .allItemsContainer {
-  height: 100%;
+  height: 90%;
   display: flex;
   transition: all 0.5s ease-in;
 
@@ -42,7 +41,7 @@
 
 .headerParagraph {
   position: absolute;
-  top: -3%;
+  top: -7%;
   width: 100%;
   text-align: center;
   color: #ffc400;

@@ -22,17 +22,19 @@
   }
   
   .nameWrapper {
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border: 1px solid white;
     display: flex;
     justify-content:center;
     align-items: center;
     background: black;
     cursor: pointer;
     text-decoration: none;
-    padding: 0px 20px;
-  
+    /* padding: 0px 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
   }
 
 .card {
@@ -62,27 +64,26 @@
  
   }
   .smallCardNameWrapper {
-    border-bottom: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border: 1px solid white;
     display: flex;
     justify-content:center;
     align-items: center;
     background: black;
     cursor: pointer;
     text-decoration: none;
-    width: 300px;
+    width: 250px;
     padding: 10px 10px;
+    border-radius: 5px;
 
   }
 
   .smallName{
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: 600;
     background-image: linear-gradient(to right, #ffbb1c, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     cursor: pointer;
    }
@@ -90,7 +91,7 @@
    .smallPhotoWrapper {
 
       width: 100%;
-      height: 100%;
+      height: 90%;
       margin-top: 7%;
       border-radius: 10px;
       display: flex;
@@ -101,11 +102,10 @@
   .smallPhoto{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-width: 2px;
     border-style: solid;
-    border:1px solid white;
-    border-radius: 10px;
+    border: inherit;
   }
   
   
@@ -171,7 +171,7 @@
    -webkit-text-fill-color: transparent;
    font-size: 10px;
    text-align: center;
-   padding: 10px 0px;
+   padding: 5px 0px;
    cursor: pointer;
   }
   
@@ -179,7 +179,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border:2px solid white;
+    /* border:2px solid white; */
+  
     /* border-radius: 10px; */
   }
   
@@ -302,19 +303,20 @@
       .c16 {
         transform: rotateY(337.5deg) translateZ(265px);
       }
+
+      .nameWrapper span{
+    
+        font-size: 9px;
+        letter-spacing: 1px;
+       }
+       .nameWrapper{
+         min-height: 35px;
+       }
+    
     }
   
-  
+ 
 
-   @media screen and (max-width:540px){
 
-    .smallCardNameWrapper {
-
-      width: 200px;
-      padding: 10px 10px;
-  
-    }
-        
-  }
 
 

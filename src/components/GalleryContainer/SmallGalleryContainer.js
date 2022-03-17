@@ -7,7 +7,7 @@ import { BsArrowLeftCircleFill } from "react-icons/bs";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { LanguageContext } from "../Common/LanguageProvider/LanguageProvider";
 import smallBG from  '../Asset/photos/galleryPhotos/smallBG.jpg'
-import bigBG from '../Asset/photos/galleryPhotos/dumbbells.jpg'
+
 
 const animationsButton = {
   initial: {
@@ -70,7 +70,7 @@ const SmallGalleryContainer = () => {
 
   return (
     <div className={style.container} style = {{
-                                               background:`url(${window.innerWidth <= 420 ? smallBG : bigBG })`,
+                                               background:`url(${window.innerWidth <= 720 && smallBG})`,
                                                backgroundRepeat:'no-repeat',
                                                backgroundSize:'cover',
                                                backgroundPosition : 'center'

@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import "./Card.css";
 
 const Card = ({ image, name, id, index,small }) => {
+
+
   return (
     <div className={small ? 'smallCardContainer' : `card c${index + 1}`} key={id}>
       <div className={small ? 'smallCardWrapper' : "cardWrapper"}>

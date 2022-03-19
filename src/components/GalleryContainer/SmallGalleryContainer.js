@@ -65,6 +65,7 @@ const SmallGalleryContainer = () => {
                 image={card.image}
                 index={index}
                 small={true}
+                id = {card.id}
               />
             ))}
        

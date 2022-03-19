@@ -9,18 +9,23 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 import SmallGalleryContainer from "./SmallGalleryContainer";
 
 
+
 const animationsGallery = {
-  initial: {
-    opacity: 0,
-    scale: 0.3,
-    y: "-100vh",
+  initial : {
+      opacity : 0,
+      y: '-100vh',
+  
   },
-  animate: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
+  animate : {
+      opacity : 1,
+      y: 0
   },
-};
+  exit : {
+      opacity: 0,
+      y : '-100vh',
+  
+  }
+}
 const animationsParagraph = {
   initial: {
     opacity: 0,
@@ -75,10 +80,11 @@ const GalleryContainer = () => {
   return (
     <motion.div
       className={style.container}
-      initial="initial"
-      animate="animate"
+      initial = 'initial'
+      animate = 'animate'
+      exit = 'exit'
       variants={animationsGallery}
-      transition={{ duration: 0.6 }}
+      transition={{duration :0.5}}
     >
       <motion.p
         className={style.headerParagraph}
@@ -93,7 +99,7 @@ const GalleryContainer = () => {
         <div className={style.galleryWrapper}>
           <div className={style.spinerWrapper} style={{ transform: `rotateX(-15deg) rotateY(-${angle}deg)` }}>
             {data.map((card, index) => (
-                 <Card key={card.id} name = {card.name} image = {card.image} index = {index}/>
+                 <Card key={card.id} name = {card.name} image = {card.image} index = {index} id = {card.id}/>
             ))}
           </div>
         </div>

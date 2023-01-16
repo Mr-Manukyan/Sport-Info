@@ -1,0 +1,153 @@
+.languageContainer { 
+    position: absolute;
+    right: 70px;
+    top: 23px;
+    z-index: 9999999;
+}
+ 
+
+ .arrow {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top:29px;
+    right: 12px;
+    transform: rotate(45deg);
+    border-bottom: 2px solid #ffbb1c;
+    border-right: 2px solid #ffbb1c;
+    transition: .2s;
+  }
+
+  .defaultLanguageImg {
+    max-width: 22px;
+    max-height: 22px;
+  }
+
+.container {
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #ffbb1c7a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.616);
+  left: -8px;
+  top: 45px;
+  border-radius: 5px;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.items {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  opacity: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.showBody {
+  position: absolute;
+  left: -8px;
+  top: 45px;
+  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.616);
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+
+}
+.showItems {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  opacity: 1;
+  transition:opacity 1.2s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flagIcon{
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.showItems:hover {
+  box-shadow: inset 0 0 5px #ffbb1c, inset 0 0 10px #ffd167;
+  transition: .3s;
+  border-radius: 3px;
+}
+
+
+@media screen and (max-width:768px){
+.languageContainer { 
+    right: 90px;
+    top: 29px;
+
+}
+.container {
+  width: 36px;
+  height: 36px;
+
+
+}
+.defaultLanguageImg {
+  max-width: 26px;
+  max-height: 26px;
+}
+.arrow {
+  top:34px;
+  right: 14px;
+  width: 6px;
+  height: 6px;
+}
+.showBody {
+  left: -12px;
+  top: 45px;
+  width: 60px;
+  height: 150px;
+}
+.body{
+  left: -12px;
+  top: 45px;
+  width: 60px;
+}
+.items {
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+}
+.showItems{
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+}
+.flagIcon{
+  max-width: 25px;
+  max-height: 25px;
+}
+
+}  
+
+
+@media screen and (max-width:320px){
+  .languageContainer { 
+      right: 60px;
+      top: 29px;
+  }
+
+} 

@@ -1,0 +1,128 @@
+
+{
+    
+    "menuItems" : [
+        {
+            "title": "Home",
+            "path" : "/",
+            "cName" : "navLinks"
+        },
+        {
+            "title" : "Diets",
+            "path" : "/diets",
+            "cName" : "navLinks"
+        },
+        {
+            "title" : "Gallery",
+            "path" : "/gallery",
+            "cName" : "navLinks"
+        },
+        {
+            "title" : "Contact Us",
+            "path" : "/contactUs",
+            "cName" : "navLinks"
+        }
+    ],
+    "homeTitle" : "Be healthy, strong and beautiful",
+    "navMenuItemsName": {
+        "left" : [
+           "Forearm", 
+           "Biceps",
+           "Chest",
+           "Trapeze",
+           "Shoulders"
+        ],
+        "right" : [
+            "Broadest",
+            "Buttocks",
+            "Abdominal",
+            "Legs",
+            "Triceps"
+        ]
+      },
+
+      "contents" : [
+        {
+            "title" : "By location, the muscles of the forearm are divided into 2 groups: the anterior, which includes flexors and pronators, and the posterior, consisting of extensors and supinators. Each group consists of superficial and deep layers. Most superficial muscles begin with their proximal ends on the humerus from its medial (anterior group) and lateral (posterior group) epicondyles, and are attached distally to the bones of the hand. The deep layer of both groups originates on the bones of the forearm and the interosseous membrane. Forearm muscle training is a long process, as they are reluctant to respond to training. Here the situation is the same as with calves. For tangible results, they are loaded 2-3 times a week.",
+            "alt" : "forearms",
+            "id" : "1"
+        },
+        {
+          "title" : "The biceps consists of two bundles, external (long) and internal (short), therefore it is called the biceps of the shoulder. The long and short bundles intersect at the anterior part of the humeroradius, performing the functions of bending the arm at the elbow joint and turning the hand. Muscle fibers are divided into fast and slow. Fast fibers are characterized by a high speed of contraction, they are responsible for strength. The slow ones, on the contrary, are “sharpened” for long-term endurance work. Each muscle has a certain proportion of these fibers. There are more slow ones in the biceps, therefore, being the smallest muscle in the arm, it is not designed for a heavy load. Based on this, when training biceps for mass, you should not set records for weight on the bar.",
+          "alt" : "biceps",
+          "id" : "2"
+      },
+      {
+          "title" : "The chest is divided into two main parts: large and small. The large one is conditionally the bottom of the chest, and the small one is the top. In addition to them, the chest group consists of several more muscles, but they are not interesting to us. With the exception of the anterior serratus, which plays an important role in building an athletic body. Its task is to press the shoulder blades to the body. You need to train the pectoral muscles for mass from different angles, use exercises based on the functions of the target group. The upper section is worked out by exercises on the bench at an angle of 30-45 degrees. The bottom, or the large chest, is pumped on a bench with a negative angle of 30 degrees. It is also necessary to pay attention to the middle. The middle is trained using information on benches with different angles and in simulators.",
+          "alt" : "chest",
+          "id" : "3"
+      },
+      {
+          "title" : "The trapezius muscle consists of three parts: upper, middle and lower. Working with both halves and all parts, the trapezius muscle reduces the shoulder blades. The upper part of the trapezius stabilizes the neck and helps to extend the cervical and upper thoracic spine. The upper part of the trapezius muscle is involved in lifting the upper limb, shoulder blades and collarbones, and the lower part - in lowering, counteracting the pressure force coming from below. The upper and lower parts of the trapezius muscle are involved in raising the arm and subsequent reduction. With a fixed shoulder, the upper part of the muscle, working with only one half, (for example, the right one) unbends and laterally bends the head and neck in the same direction, and also contributes to the rotation of the head in the opposite (left) side..",
+          "alt" : "trapeze",
+          "id" : "4"
+      },
+      {
+          "title" : "This superficially located human muscle consists of three parts: anterior, middle and posterior. At the top, the anterior part of the deltoid muscle is attached to the outer third of the clavicle, the middle part to the acromion of the scapula, and the back part to the outer part of the spine of the scapula. Below, all parts of the muscle come together and attach to the deltoid tuberosity of the humerus. The function of the anterior bundle is to move the arm forward. The most “working” beam is used in most daily movements. A trained middle delt gives the athlete width when viewed from the front. The second bundle in terms of functionality. The task of the middle delta is to take the arm to the side. The back of the shoulder works when the arm is pulled back.",
+          "alt" : "deltoid",
+          "id" : "5"
+      },
+      {
+          "title" : "The latissimus dorsi muscle is a superficial human muscle located in the lower back. Below, it is attached to the spinous processes from the sixth to the twelfth lower thoracic vertebrae, to all the lumbar vertebrae, to the sacrum and to the iliac crest. Part of the lower muscle fibers below is attached to the lower three or four ribs. The latissimus dorsi at the top covers the lower angle of the scapula, bends around the lower edge of the large round muscle and is attached to the crest of the small tubercle of the humerus. The latissimus dorsi extends the arm in the shoulder joint. It participates in adduction arms, as well as in the internal rotation of the upper limb in the shoulder joint. The back is the second largest muscle mass after the legs.",
+          "alt" : "latissimus",
+          "id" : "6"
+      },
+      {
+          "title" : "The gluteus maximus muscle forms the convex part of the buttock and is a fairly massive muscle. It is twice as heavy as the gluteus medius and minimus combined. The gluteus maximus muscle, when the body is fixed, at the time of contraction, is involved in the extension of the leg in the hip joint. When the legs are fixed, it contributes to the rotation of the pelvis back and extension of the spine. in external rotation (rotation) of the hip. The gluteus maximus muscle is involved in the lateral tilt of the pelvis, as well as in the internal (medial) rotation of the pelvis. During walking, this muscle turns on immediately after touching the heel of the ground and limits the desire for flexion in the hip joint.",
+          "alt" : "gluteal",
+          "id" : "7"
+      },
+      {
+          "title" : "Cubes are formed on the main, rectus abdominis muscle. It originates from the pubic bone and is attached to the ribs and sternum. This muscle is divided by three or four tendon bridges, which forms muscle “tubercles” - the same cubes. on exhalation. The external oblique muscle of the abdomen is located on the sides of the body, it is the largest of all the muscles of the press. These muscles help to turn the body to the sides, pull the chest down, and are also actively involved in bringing the pelvis and legs to the sternum. oblique muscle is located under the external oblique. She is responsible for flexion-extension of the body, lifting the legs and pelvis to the sternum. The transverse abdominal muscle is located under two layers of oblique muscles.",
+          "alt" : "abdominal",
+          "id" : "8"
+      },
+      {
+          "title" : "The quadriceps femoris (quadriceps femoris) and the vastus intermedius, which lies under the rectus femoris. The quadriceps femoris is the largest and heaviest muscle in the body. It can weigh 50% more than the second heaviest muscle in the human body - the gluteus maximus muscle. The rectus femoris is an exception to this group and crosses 2 joints - the knee and hip, attaching from above to the pelvic bone. The rectus femoris muscle, crossing the knee and hip joints, participates not only in extension of the knee joint, but also in hip flexion (with a fixed pelvis) together with the iliopsoas muscle, tensor fascia lata, sartorius muscle and adductor group of thigh muscles, or participates in the anterior tilt of the pelvis with a fixed hip.",
+          "alt" : "quadriceps",
+          "id" : "9"
+      },
+      {
+          "title" : "Triceps, following from the name, consists of three heads: long, lateral and medial. The long head of the triceps is attached to the subarticular tubercle of the scapula and is located on the inside of the arm. The lateral head of the triceps is a long muscle that occupies almost 2/3 of the entire triceps. It originates from the shoulder bundle and is located on the outside. The medial head of the triceps is stretched from the back of the humerus to the elbow joint. This is the smallest muscle that divides the other two at the top, but connects them at the bottom, thereby forming a semblance of the letter < v >. The main function of the muscle is to extend the arm at the elbow joint. Just like the biceps helps to flex the forearm, the triceps returns the arm to its original position. In addition, the triceps helps the shoulder bring the arm to the body, due to the fact that the length of the muscle reaches the shoulder.",
+          "alt" : "triceps",
+          "id" : "10"
+      }
+    ],
+    "contentsParagraph" : "Information",
+    "authorInfo" : {
+        "author" : "Author՝",
+        "name" : "Manukyan Karen",
+        "mail" : "Email address՝",
+        "mailAddress" : "arm.karen.manukyan88@gamil.com",
+        "phone" : "Phone`",
+        "phoneNumber" : "+374-41-099-022",
+        "contact" : "Contact Us"
+    },
+
+    "galleryParagraph" : "All Mr. Olympia Winners Since 1965",
+    "galeryInfoParagraph" : "Became an Olympic champion in`",
+    "galleryTextInfo" : {
+        "1" : "Larry Scott was an American bodybuilder and the first to be crowned Olympia champion. Larry would go on to defend his title the very next year, before subsequently retiring. This marked the official start of the Mr. Olympia contest era, in which notable bodybuilders would go on to see great success.",
+        "2" : "Known as “The Myth”, Sergio Oliva burst onto the scenes from Cuba to take over the new spot as Mr. Olympia champion with his mind-blowing combination of mass, symmetry and round muscle bellies in 1967. Sergio was defeating some of the most iconic individuals in bodybuilding, including a young Arnold Schwarzenegger, when the latter made his Olympia debut.",
+        "3" : "Considered the greatest and most iconic bodybuilder of all time, Arnold officially took over as the new Mr. Olympia champion in 1970. ‘The Austrian Oak’ went on to win an outstanding 7 titles during his glorified bodybuilding career.",
+        "4" : "As best friend and long-time training partner of Arnold Schwarzenegger, Columbu defeated a heavily competitive class in both 1976 and 1981 to solidify his tremendous bodybuilding career.Columbu, originally hailing from Sardinia, was well known to have one of the most impressive chest and back, paired with an incredible amount of physical strength.",
+        "5" : "With Frank Zane the era of symmetry, aesthetics and conditioning started in bodybuilding. Frank won 3 Olympia titles in a row by looking like a perfect sculpture onstage. The dynamics changed from mass to class, with Zane literally redefining bodybuilding",
+        "6" : "Chris continued the trend of conditioning, shape and aesthetics. Powered by an outstanding back, fantastic calves and elegant posing, Chris – already in his early 40ies –  finally won the Olympia title on his 4th attempt.",
+        "7" : "Known as ‘The Lion of Lebanon’, Samir hit physical perfection in 1983. He brought an unbeatable combination of muscle fullness, hardness, conditioning and symmetry on stage. When he posed, every muscle popped. His back development appeared to be from another galaxy, with a ‘Christmas tree’ no one ever surpassed.",
+        "8" : "Haney simply blew the competition away every year with his never before seen combination of size and symmetry. He went on to become an 8-time Mr. Olympia champion. His mass with class package dominated bodybuilding for almost a full decade.",
+        "9" : "With Yates a new standard of size was set for the Olympia. Dorian would consistently bring an eye-popping amount of muscle mass on stage. At his second Olympia win, he may have presented the single best combo of massive size paired with dry and full muscle conditioning this sport has ever seen. Dorian Yates would go on to win 6 straight Olympia titles, before he was forced into retirement due to training injuries.",
+        "10" : "Ronnie Coleman continued the trend of freakish muscle size paired with extreme conditioning. He is well known for his intense training style, as depicted in many small documentaries during his powerhouse journey that led to 8 consecutive Mr. O titles.",
+        "11" : "Fellow rival of Ronnie Coleman for many years, Jay Cutler was finally able to defeat Ronny and end his reign in 2006. Cutler would go on to win 4 Mr. Olympia titles, powdered by his immense muscle thickness and freakish leg development.",
+        "12" : "Dexter Jackson snatched the Olympia crown away from Jay Cutler in 2008. ‘The Blade’ as he is known, brought back the classic bodybuilding criteria of symmetry, conditioning, beautiful lines coupled with just the right amount of muscle size.",
+        "13" : "Phil Heath was able to take down Jay Cutler during his prime, and held the top spot for 7 straight years. Nicknamed ‘The Gift’, Heath has extremely full and round muscle bellies supported by great conditioning. His physique really came to life upon flexing, with superior muscle detail and quality popping everywhere.",
+        "14" : "Shawn Rhoden was the oldest bodybuilder to have ever won the Mr. Olympia title. At the age of 43, he was able to defeat the defending 7-time Mr. Olympia Phil Heath. Shawn brought an almost flawless combination of size and conditioning with beautiful proportions to the Olympia stage that year. Unfortunately, Shawn was never able to compete again after his win. In 2021, Shawn Rhoden passed away at the age of 46.",
+        "15" : "Brandon surprised the bodybuilding world by winning the Mr. Olympia after having competed as a pro for almost a decade. With a solid combination of symmetry, conditioning and muscle fullness, accentuated by his small waist and narrow hips, he deservingly secured the title in 2019.",
+        "16" : "Mamdouh Elssbiay, better known as Big Ramy, is an Egyptian IFBB professional bodybuilder. He is the reigning Mr. Olympia champion. Big Ramy’s trademarks are his incredible muscle mass and humongous quads.He finally achieved the needed muscle hardness and conditioning to match his unbelievable size. With this unbeatable combination, Big Ramy dominated the stage and was declared the clear winner. He will defend his title in Las Vegas during the Olympia weekend December 15 – 18, 2022."
+    }
+    
+}

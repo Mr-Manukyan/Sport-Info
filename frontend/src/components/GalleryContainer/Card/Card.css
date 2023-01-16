@@ -1,0 +1,333 @@
+.cardWrapper{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  
+  }
+  
+  .photoWrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+    /* border-radius: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .nameWrapper {
+    border: 1px solid white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: black;
+    cursor: pointer;
+    text-decoration: none;
+    /* padding: 0px 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+  }
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* border-radius: 10px; */
+  
+  }
+  
+  
+  .c1 {
+    transform: rotateY(0deg) translateZ(450px);
+  }
+  
+  .c2 {
+    transform: rotateY(22.5deg) translateZ(450px);
+  }
+  .c3 {
+    transform: rotateY(45deg) translateZ(450px);
+  }
+  .c4 {
+    transform: rotateY(67.5deg) translateZ(450px);
+  }
+  .c5 {
+    transform: rotateY(90deg) translateZ(450px);
+  }
+  .c6 {
+    transform: rotateY(112.5deg) translateZ(450px);
+  }
+  
+  .c7 {
+    transform: rotateY(135deg) translateZ(450px);
+  }
+  
+  .c8 {
+    transform: rotateY(157.5deg) translateZ(450px);
+  }
+  .c9 {
+    transform: rotateY(180deg) translateZ(450px);
+  }
+  .c10 {
+    transform: rotateY(202.5deg) translateZ(450px);
+  }
+  .c11 {
+    transform: rotateY(225deg) translateZ(450px);
+  }
+  .c12 {
+    transform: rotateY(247.5deg) translateZ(450px);
+  }
+  .c13 {
+    transform: rotateY(270deg) translateZ(450px);
+  }
+  .c14 {
+    transform: rotateY(292.5deg) translateZ(450px);
+  }
+  .c15 {
+    transform: rotateY(315deg) translateZ(450px);
+  }
+  .c16 {
+    transform: rotateY(337.5deg) translateZ(450px);
+  }
+  
+
+  .name{
+  
+   letter-spacing: 1px;
+   font-weight: 600;
+   background-image: linear-gradient(to right, #ffbb1c, #ffffff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 10px;
+   text-align: center;
+   padding: 5px 0px;
+   cursor: pointer;
+  }
+  
+  .photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border:2px solid white; */
+  
+    /* border-radius: 10px; */
+  }
+  
+  
+  @media screen and (max-width:1260px){
+    .c1 {
+        transform: rotateY(0deg) translateZ(350px);
+      }
+      
+      .c2 {
+        transform: rotateY(22.5deg) translateZ(350px);
+      }
+      .c3 {
+        transform: rotateY(45deg) translateZ(350px);
+      }
+      .c4 {
+        transform: rotateY(67.5deg) translateZ(350px);
+      }
+      .c5 {
+        transform: rotateY(90deg) translateZ(350px);
+      }
+      .c6 {
+        transform: rotateY(112.5deg) translateZ(350px);
+      }
+      
+      .c7 {
+        transform: rotateY(135deg) translateZ(350px);
+      }
+      
+      .c8 {
+        transform: rotateY(157.5deg) translateZ(350px);
+      }
+      .c9 {
+        transform: rotateY(180deg) translateZ(350px);
+      }
+      .c10 {
+        transform: rotateY(202.5deg) translateZ(350px);
+      }
+      .c11 {
+        transform: rotateY(225deg) translateZ(350px);
+      }
+      .c12 {
+        transform: rotateY(247.5deg) translateZ(350px);
+      }
+      .c13 {
+        transform: rotateY(270deg) translateZ(350px);
+      }
+      .c14 {
+        transform: rotateY(292.5deg) translateZ(350px);
+      }
+      .c15 {
+        transform: rotateY(315deg) translateZ(350px);
+      }
+      .c16 {
+        transform: rotateY(337.5deg) translateZ(350px);
+      }
+
+      .nameWrapper span{
+        font-weight:bold;
+        font-size: 8px;
+       }
+       .nameWrapper {
+        padding: 0px 5px;
+      
+      }
+        
+  } 
+
+  @media screen and (max-width:960px){
+    .c1 {
+        transform: rotateY(0deg) translateZ(265px);
+      }
+      
+      .c2 {
+        transform: rotateY(22.5deg) translateZ(265px);
+      }
+      .c3 {
+        transform: rotateY(45deg) translateZ(265px);
+      }
+      .c4 {
+        transform: rotateY(67.5deg) translateZ(265px);
+      }
+      .c5 {
+        transform: rotateY(90deg) translateZ(265px);
+      }
+      .c6 {
+        transform: rotateY(112.5deg) translateZ(265px);
+      }
+      
+      .c7 {
+        transform: rotateY(135deg) translateZ(265px);
+      }
+      
+      .c8 {
+        transform: rotateY(157.5deg) translateZ(265px);
+      }
+      .c9 {
+        transform: rotateY(180deg) translateZ(265px);
+      }
+      .c10 {
+        transform: rotateY(202.5deg) translateZ(265px);
+      }
+      .c11 {
+        transform: rotateY(225deg) translateZ(265px);
+      }
+      .c12 {
+        transform: rotateY(247.5deg) translateZ(265px);
+      }
+      .c13 {
+        transform: rotateY(270deg) translateZ(265px);
+      }
+      .c14 {
+        transform: rotateY(292.5deg) translateZ(265px);
+      }
+      .c15 {
+        transform: rotateY(315deg) translateZ(265px);
+      }
+      .c16 {
+        transform: rotateY(337.5deg) translateZ(265px);
+      }
+
+      .nameWrapper span{
+    
+        font-size: 9px;
+        letter-spacing: 1px;
+       }
+       .nameWrapper{
+         min-height: 35px;
+       }
+    
+    }
+  
+
+    .smallCardContainer {
+      min-width: 100%;
+      height: 100%;
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
+    }
+
+
+    .smallCardNameWrapper {
+      border: 1px solid white;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background: black;
+      cursor: pointer;
+      text-decoration: none;
+      width: 250px;
+      padding: 10px 10px;
+      border-radius: 5px;
+  
+    }
+  
+    .smallName{
+      letter-spacing: 2px;
+      font-weight: 600;
+      background-image: linear-gradient(to right, #ffbb1c, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+     }
+  
+     .smallPhotoWrapper {
+  
+        width: 100%;
+        height: 80%;
+        margin-top: 7%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+  
+    .smallPhoto{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-width: 2px;
+      border-style: solid;
+      border: inherit;
+    }
+
+  
+    .smallCardWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+      
+   
+    }
+
+
+    @media screen and (max-width:540px){
+ 
+      .smallName{
+        font-size: 14px;
+        letter-spacing: 2px;
+       }
+  
+    
+    }
+
+

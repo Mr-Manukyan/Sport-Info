@@ -1,0 +1,132 @@
+.itemIcon {
+    display: none;
+}
+
+.navLinks {
+   width: 140px;
+   height: 40px;
+   position: relative;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.401);
+   overflow: hidden;
+   font-size: 12px;
+   letter-spacing: 1px;
+   font-weight: 500;
+}
+
+.activeLink {
+  width: 140px;
+  height: 40px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffbb1c83;
+  transition: 0.3s;  
+  font-size: 12px;
+  letter-spacing: 2px;   
+  text-shadow: 2px 2px #000000;
+  font-weight: 500;
+}
+
+@media screen and (max-width:1024px){
+  .navLinks {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    letter-spacing: 2px; 
+ }
+ .activeLink {
+  width: 100px;
+  height: 35px;
+  font-size: 12px;
+  letter-spacing: 2px;   
+}
+}
+
+@media screen and (max-width:1024px){
+  .navLinks {
+    width: 100px;
+    height: 35px;
+    font-size: 11px;
+    letter-spacing: 1px; 
+ }
+ .activeLink {
+  width: 100px;
+  height: 35px;
+  font-size: 11px;
+  letter-spacing: 1px;   
+}
+}
+
+@media screen and (max-width:768px){
+  .linkWrapper {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navLinks {
+    width: 60%;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: #ffbb1c83;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s;
+  
+ }
+ .activeLink {
+  width: 60%;
+  height: 50px;
+  background: rgba(255, 21, 21, 0.4);
+  transition: 0.3s;  
+  font-size: 16px;
+  letter-spacing: 3px;   
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.navLinks:hover{
+  background: rgba(255, 185, 21, 0.815);
+}
+    
+}
+
+
+
+@media screen and (max-width:468px){
+  .navLinks{
+    font-size: 13px;
+    letter-spacing: 4px;
+    width: 60%;
+    height: 50px;
+  }
+  .activeLink{
+    font-size: 15px;
+    letter-spacing: 4px;
+    width: 60%;
+    height: 50px;
+  }
+
+
+}
+
+
+
+
+
+
+
+

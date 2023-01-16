@@ -1,0 +1,124 @@
+.container {
+  position: fixed;
+  right: 4%;
+  bottom: 8vh;
+  z-index: 100000000000000000;
+  transition: all 0.5s ease;
+}
+
+
+.wrapper {
+    position: relative;
+}
+
+.scrollUp {
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    color : white;
+    background:#ffb300 ;
+    transition: all 0.2s ease;
+
+  }
+
+  .scrollUp:hover {
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    color : white;
+    background:#ffe39e ;
+
+  }
+  .scrollUp::before,
+  .scrollUp::after {
+    content: "";
+    position: absolute;
+    bottom: -14%;
+    left: 50%;
+    height: 8px;
+    width: 8px;
+    transform: translate(-50%, -100%) rotate(-135deg);
+    border: 3px solid rgb(0, 0, 0);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scrollUp 1s ease-in-out infinite;
+  }
+  .scrollUp::before {
+    bottom: -4%;
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes scrollUp {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity:1;
+    }
+    100% {
+      bottom: 50%;
+      opacity: 0;
+    }
+  }
+
+
+
+  @media screen and (max-width:1024px) {
+    .container {
+      right: 5.5%;
+    }     
+   }
+
+   @media screen and (max-width:768px) {
+    .container {
+      right: 6%;
+      bottom: 8vh;
+    }     
+   }
+
+   @media screen and (max-width:600px) {
+    .container {
+      right: 8%;
+      bottom: 8vh;
+    }     
+   }
+
+   @media screen and (max-width:600px) {
+ 
+    .scrollUp {
+      height: 40px;
+      width: 25px;
+    }    
+   }
+
+   @media screen and (max-width:420px) {
+    .container {
+      right: 8%;
+      bottom: 8vh;
+    } 
+     
+   }
+   @media screen and (max-width:320px) {
+    .container {
+      right: 11%;
+
+    } 
+     
+   }
+   @media screen and (max-width:280px) {
+    .container {
+      right: 12%;
+    } 
+     
+   }
+
+
+  
+  

@@ -1,0 +1,92 @@
+.container{
+    width: 320px;
+    height: 140px;
+    background-image: url('../../Asset/icons/headerLogo.png');
+    background-size: 100% 100%;
+    position: fixed;
+    top: 65px;
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 45px;
+    object-fit: cover;
+    position: absolute;
+    left: 35px;
+    top: 40px;
+}
+
+.logoName {
+    position: absolute;
+    left: 32%;
+    top: 55px;
+    background-image: linear-gradient(to right, #ffbb1c, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.authorName {
+    position: absolute;
+    left: 75.5%;
+    top: 48px;
+    font-family: 'Parisienne', cursive;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1024px){
+    .container{
+        width: 240px;
+        height: 110px;
+        top: 62px;
+    }
+    .logo {
+        max-width: 38px;
+        left: 25px;
+        top: 31px;
+    }
+    .authorName {
+        top: 37px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .logoName {
+        left: 31%;
+        top: 45px;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .container{
+        width: 160px;
+        height: 70px;
+        top:5px;
+        left:10px;
+    }
+    .logo {
+        max-width: 26px;
+        left: 16px;
+        top: 18px;
+    }
+    .authorName {
+        top: 24px;
+        font-size: 8px;
+       
+    }
+    .logoName {
+        left: 30%;
+        top: 25px;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+}
+

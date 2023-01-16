@@ -1,0 +1,97 @@
+.container{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left: 25px;
+    top: 10px;
+    background-image: url('../../Asset/icons/logo.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    animation: rotate 2s infinite alternate-reverse;
+    
+}
+
+.logoPhoto {
+    max-width: 45px;
+    object-fit: cover;
+}
+
+
+.flex1{
+    width: 60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Asset/icons/logo.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+
+    position: absolute;
+    transform: rotateY(-120deg) translateZ(17px);
+
+}
+.flex2{
+    width: 60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Asset/icons/logo.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    transform: rotateY(120deg) translateZ(17px);
+
+}
+.flex3{
+    width: 60px;
+    height: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Asset/icons/logo.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+
+    position: absolute;
+    transform: rotateY(0deg) translateZ(17px);
+
+}
+
+.logoPhotoSize {
+    max-width: 65px;
+    object-fit: cover;
+}
+
+
+@keyframes rotate {
+    0%{
+       transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .container{
+        width: 50px;
+        height: 50px;
+        top: 14px;
+    }
+    .logoPhoto {
+        max-width: 40px;
+        object-fit: cover;
+    } 
+}
+
+@media screen and (max-width:768px){
+    .container{
+       display:none;
+    }
+}
